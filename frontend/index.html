@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Smart Feedback</title><link rel='stylesheet' href='css/style.css'></head><body>
+<div class="container">
+  <header class="header">
+    <div class="logo"><div class="mark">SF</div><div><div class="title">Smart Feedback Collection & Analysis</div><div class="small">Capture, analyze, and act on user feedback</div></div></div>
+    <div><a href="login.html" class="btn">Login</a></div>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Tell us what you think</h2>
+      <p class="small">Your feedback helps us improve. Submit anonymously or register for history.</p>
+      <input id="username" class="input" placeholder="Your name (optional)">
+      <input id="email" class="input" placeholder="Email (optional)">
+      <textarea id="message" class="input" placeholder="Write your feedback..."></textarea>
+      <div style="display:flex;gap:12px;align-items:center;margin-top:8px">
+        <button id="sendBtn" class="btn">Send Feedback</button>
+        <div id="badge" class="success-badge small"></div>
+      </div>
+      <p id="status" class="small"></p>
+    </div>
+
+    <div class="card">
+      <h2>Live sentiment overview</h2>
+      <div id="chart-wrap"><canvas id="chart"></canvas></div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/main.js"></script>
+</body></html>

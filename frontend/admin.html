@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Admin - Smart Feedback</title><link rel='stylesheet' href='css/style.css'></head><body>
+<div class="container">
+  <header class="header">
+    <div class="logo"><div class="mark">SF</div><div><div class="title">Admin Panel</div><div class="small">Manage feedbacks</div></div></div>
+    <div><a href="index.html" class="btn">Home</a></div>
+  </header>
+
+  <div style="max-width:1100px;margin:20px auto">
+    <div class="card">
+      <h2>Admin Panel</h2>
+      <p class="small">Login as admin to manage feedbacks.</p>
+      <div style="display:flex;gap:12px;margin-top:8px"><input id="adminEmail" class="input" placeholder="admin email" value="admin@tcs.com"><input id="adminPass" class="input" placeholder="admin password" value="admin123"><button id="adminLogin" class="btn">Admin Login</button></div>
+      <div id="adminArea" style="display:none;margin-top:16px">
+        <h3>All feedbacks</h3><div id="adminTable"></div>
+        <h3 style="margin-top:18px">Sentiment chart</h3><div id="chart-wrap"><canvas id="adminChart"></canvas></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/main.js"></script>
+</body></html>
