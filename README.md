@@ -4,7 +4,7 @@ Smart Feedback Collection and Analysis System
 The Smart Feedback Collection and Analysis System is a full-stack web application designed to collect, analyze, and visualize user feedback. It uses sentiment analysis to automatically classify feedback as Positive, Negative, or Neutral and displays dynamic visualizations for administrators.
 This project demonstrates the integration of core web technologies — HTML, CSS, JavaScript, Node.js, Express, RESTful APIs, and MySQL — to build a complete, real-world web solution.
 
-🎯 Project Features
+* Project Features
 
 • User Feedback Submission: Users can submit feedback easily through a responsive web interface.
 • Sentiment Analysis: The system automatically evaluates the sentiment of feedback (Positive, Negative, or Neutral).
@@ -13,32 +13,7 @@ This project demonstrates the integration of core web technologies — HTML, CSS
 • Database Integration: All feedback and user data are securely stored in a structured MySQL database.
 • Authentication: Supports user and admin login using JWT (JSON Web Tokens).
 
-🗂️ Folder Structure
-
-Smart-Feedback/
-│
-├── backend/
-│ ├── server.js → Main Express server and route handler
-│ ├── db.js → MySQL database connection
-│ ├── controllers/
-│ │ ├── feedbackController.js
-│ │ └── authController.js
-│ ├── routes/
-│ │ ├── feedbackRoutes.js
-│ │ └── authRoutes.js
-│
-├── frontend/
-│ ├── index.html → Homepage for guest feedback submission
-│ ├── login.html → User login and registration page
-│ ├── admin.html → Admin dashboard for managing feedback
-│ ├── styles.css → Application styling
-│ └── script.js → Frontend logic for API calls and charts
-│
-├── package.json → Node.js dependencies
-├── .env → Environment configuration (DB credentials)
-└── README.md → Documentation file
-
-🧰 Technologies Used
+* Technologies Used
 
 Frontend: HTML, CSS, JavaScript, Chart.js
 Backend: Node.js, Express.js
@@ -49,16 +24,16 @@ IDE / Editor: Visual Studio Code
 Testing Tools: Postman, MySQL Workbench
 Version Control: GitHub
 
-⚙️ Setup Instructions
+* Setup Instructions
 
-1️⃣ Clone the Repository
+1️. Clone the Repository
 git clone https://github.com/Srinidhhi-29/Smart-Feedback-Project.git
 
-2️⃣ Install Backend Dependencies
+2️. Install Backend Dependencies
 cd Smart-Feedback-Project/backend
 npm install
 
-3️⃣ Setup Database
+3️. Setup Database
 Create a MySQL database named feedbackdb
 Run the SQL script:
 CREATE DATABASE feedbackdb;
@@ -84,37 +59,32 @@ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-4️⃣ Run the Backend Server
+* Run the Backend Server
 node server.js
 The server starts on: http://127.0.0.1:5000
 
-5️⃣ Serve the Frontend
+*Serve the Frontend
 Open another terminal:
 cd ../frontend
 python -m http.server 8000
 Then open your browser and visit:
 http://127.0.0.1:8000
 
-🧪 Testing & Validation
+*Testing & Validation
 
 • Postman: Used to test REST APIs (/api/feedback, /auth/login, /auth/register, /api/all).
 • MySQL Workbench: Verified feedback storage and sentiment classification.
 • Frontend: Real-time updates visualized using Chart.js.
 • Admin Actions: Validated deletion of negative feedback.
 
-🧠 Troubleshooting
+* Troubleshooting
 
 Issue: Access denied for user 'root'@'localhost' → Update .env with correct MySQL username/password
 Issue: Cannot find module 'dotenv' → Run npm install dotenv
 Issue: Port 5000 busy → Change PORT value in .env file
 Issue: Chart not loading → Ensure backend is running before opening frontend
 
-💬 Credits
-
-Developed by Srinidhhi-29
-Submitted as part of TCS Industry Project: Smart Feedback Collection and Analysis System (2025)
-
-📎 Repository Link
+* Repository Link
 
 Smart Feedback Project on GitHub:
 https://github.com/Srinidhhi-29/Smart-Feedback-Project
