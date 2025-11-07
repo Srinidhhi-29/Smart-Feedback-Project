@@ -1,5 +1,5 @@
 Smart Feedback Collection and Analysis System
-📘 Project Overview
+-Project Overview
 
 The Smart Feedback Collection and Analysis System is a full-stack web application designed to collect, analyze, and visualize user feedback. It uses sentiment analysis to automatically classify feedback as Positive, Negative, or Neutral and displays dynamic visualizations for administrators.
 This project demonstrates the integration of core web technologies — HTML, CSS, JavaScript, Node.js, Express, RESTful APIs, and MySQL — to build a complete, real-world web solution.
